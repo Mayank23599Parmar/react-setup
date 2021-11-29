@@ -13,7 +13,8 @@ class HomePage extends Component {
                     <h1>Home page for big screen</h1>
                 </MediaQuery>
 
-
+                <p>matagg f3fd3hf3h30h3 f3f3f</p>
+                <button className="btn">Get started</button>
             </div>
         );
     }
