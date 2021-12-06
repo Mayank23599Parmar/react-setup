@@ -4,12 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+ <script>
+   window.cn = function (o) { return "undefined" == typeof o || null == o || "" == o.toString().trim() };
+window.cb = function (o) { if (o == 'true') { return true } else { return false } };
+ </script>
+    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./theme.css">
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+  
     <script src="./theme.js"></script>
   </body>
 </html>
