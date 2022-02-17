@@ -99,7 +99,6 @@
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
   padding-right: 15px; }
   .col-xs-1.static,
   .col-sm-1.static,
@@ -626,9 +625,100 @@
     display: table-cell;
     vertical-align: middle; }
 
-body {
-  background-color: #ddd; }
-
-.App .App-header p {
-  color: red; }
+.todo-app-wrapper {
+  margin: 100px 0; }
+  @media screen and (max-width: 767px) {
+    .todo-app-wrapper {
+      width: 95%;
+      margin: 100px auto; } }
+  .todo-app-wrapper .title-wrapper {
+    font-size: 30px;
+    font-weight: 300;
+    color: #242527;
+    padding-bottom: 20px;
+    margin-left: 15px;
+    border-bottom: 1px solid #e7e7e7; }
+    @media screen and (max-width: 767px) {
+      .todo-app-wrapper .title-wrapper {
+        font-size: 24px; } }
+  .todo-app-wrapper .col-sm-4:nth-child(4) {
+    padding-left: 10px; }
+  .todo-app-wrapper .form-input {
+    width: 100%;
+    margin: 25px 10px; }
+    .todo-app-wrapper .form-input input {
+      width: 100%;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 5px; }
+    .todo-app-wrapper .form-input .error-message {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5s;
+      color: #fa3c3c;
+      margin: 10px 0; }
+  .todo-app-wrapper .submit-button {
+    float: right; }
+  .todo-app-wrapper .displat-data {
+    margin-top: 25px; }
+    .todo-app-wrapper .displat-data .table {
+      width: 100%; }
+      .todo-app-wrapper .displat-data .table thead tr {
+        background-color: #1b69b4; }
+        .todo-app-wrapper .displat-data .table thead tr th {
+          width: 16.666%;
+          color: #ffff;
+          font-weight: bolder;
+          font-size: 20px;
+          text-align: left;
+          padding: 10px; }
+      .todo-app-wrapper .displat-data .table tbody {
+        margin: 10px 0; }
+        .todo-app-wrapper .displat-data .table tbody tr td {
+          padding: 10px 15px; }
+        .todo-app-wrapper .displat-data .table tbody tr .delete-data {
+          cursor: pointer; }
+          .todo-app-wrapper .displat-data .table tbody tr .delete-data img {
+            width: 20px;
+            height: 20px; }
+  .todo-app-wrapper .modal {
+    background: rgba(0, 0, 0, 0.6); }
+    .todo-app-wrapper .modal.d-block {
+      display: block; }
+    .todo-app-wrapper .modal.d-none {
+      display: none; }
+  .todo-app-wrapper .modal-container {
+    position: absolute;
+    width: 50%;
+    background: #fbfbfb;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 999;
+    text-align: center; }
+    .todo-app-wrapper .modal-container .button-action-wrapper {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-flex-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      width: 50%;
+      margin: 0 auto; }
+      .todo-app-wrapper .modal-container .button-action-wrapper .btn-action {
+        cursor: pointer;
+        padding: 16px 32px;
+        color: #ffff;
+        background: #6dd16d; }
+        .todo-app-wrapper .modal-container .button-action-wrapper .btn-action.delete {
+          background: red; }
 
