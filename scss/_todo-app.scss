@@ -1,0 +1,118 @@
+//todo app
+.todo-app-wrapper {
+    margin: 100px 0;
+    @include mq("phone") {
+        width: 95%;
+        margin: 100px auto;
+    }
+    .title-wrapper {
+        font-size: 30px;
+        font-weight: 300;
+        color: #242527;
+        padding-bottom: 20px;
+        margin-left: 15px;
+        border-bottom: 1px solid #e7e7e7;
+        @include mq("phone") {
+            font-size: 24px;
+        }
+    }
+    .col-sm-4 {
+        &:nth-child(4) {
+            padding-left: 10px;
+        }
+    }
+    .form-input {
+        width: 100%;
+        input {
+            width: 100%;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 5px;
+        }
+        margin: 25px 10px;
+        .error-message {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.5s;
+            color: rgb(250, 60, 60);
+            margin: 10px 0;
+        }
+    }
+    .submit-button {
+        float: right;
+    }
+    .displat-data {
+        margin-top: 25px;
+        .table {
+            width: 100%;
+            thead {
+                tr {
+                    background-color: #1b69b4;
+
+                    th {
+                        width: 16.666%;
+                        color: #ffff;
+                        font-weight: bolder;
+                        font-size: 20px;
+                        text-align: left;
+                        padding: 10px;
+                    }
+                }
+            }
+            tbody {
+                margin: 10px 0;
+                tr {
+                    td {
+                        padding: 10px 15px;
+                    }
+                    .delete-data {
+                        cursor: pointer;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal {
+        background: rgba(0, 0, 0, 0.6);
+        &.d-block {
+            display: block;
+        }
+        &.d-none {
+            display: none;
+        }
+    }
+    .modal-container {
+        position: absolute;
+        width: 50%;
+        background: #fbfbfb;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #ccc;
+        padding: 20px;
+        z-index: 999;
+        text-align: center;
+        .button-action-wrapper {
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+            width: 50%;
+            margin: 0 auto;
+            .btn-action {
+                cursor: pointer;
+                padding: 16px 32px;
+                color: #ffff;
+                background: rgb(109, 209, 109);
+                &.delete {
+                    background: red;
+                }
+            }
+        }
+    }
+}
