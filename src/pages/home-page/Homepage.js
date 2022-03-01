@@ -22,8 +22,7 @@ class TodaApp extends Component {
         //input onchange handler for change input value 
         let filedName = e.target.name
         let temp;
-        temp = e.target.value.replace(/\s\s+/g, '');
-        temp = temp.trim()
+        temp = e.target.value
         let Error = e.target.name + "Error"
         this.setState((prevState) => ({
             ...prevState,

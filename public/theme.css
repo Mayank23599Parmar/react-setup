@@ -722,3 +722,19 @@
         .todo-app-wrapper .modal-container .button-action-wrapper .btn-action.delete {
           background: red; }
 
+.file-selector-wrapper {
+  max-width: 1200px;
+  margin: 100px auto; }
+  .file-selector-wrapper .excel-selector {
+    background: #ffffff;
+    color: black;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+    display: block;
+    padding: 1rem 50px;
+    width: 30%;
+    margin: 0 auto; }
+

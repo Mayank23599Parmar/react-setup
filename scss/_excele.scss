@@ -1,0 +1,18 @@
+.file-selector-wrapper {
+    max-width: 1200px;
+    margin: 100px auto;
+
+    .excel-selector {
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        border: 1px solid #000;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        outline: none;
+        display: block;
+        padding: 1rem 50px;
+        width: 30%;
+        margin: 0 auto;
+    }
+}
