@@ -32,6 +32,7 @@ class ExcelData extends Component {
             <div className='file-selector-wrapper'>
                 <input type={'file'} onChange={(e) => this.onChange(e)} className="excel-selector" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
             </div>
+            <div>
             {
                 this.state.excelData.length > 0 && (
                     <table>
@@ -87,6 +88,8 @@ class ExcelData extends Component {
                     </table>
                 )
             }
+            </div>
+           
         </>
         );
     }

@@ -724,7 +724,8 @@
 
 .file-selector-wrapper {
   max-width: 1200px;
-  margin: 100px auto; }
+  margin: 100px auto;
+  padding: 0 15px; }
   .file-selector-wrapper .excel-selector {
     background: #ffffff;
     color: black;
