@@ -739,3 +739,59 @@
     width: 30%;
     margin: 0 auto; }
 
+.excel-format-error {
+  color: #dc3545;
+  text-align: center; }
+
+.download-excel a {
+  background: #4bb543;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 10px 0; }
+
+.excel-table-wrapper {
+  max-width: 1400px;
+  margin: 100px auto;
+  padding: 0 15px; }
+  .excel-table-wrapper .error-message-title {
+    color: #dc3545;
+    text-align: center; }
+  .excel-table-wrapper .download-excel a {
+    background: #4bb543;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 10px 0; }
+  .excel-table-wrapper table tr td.errror-message {
+    color: #dc3545; }
+
+.gest-entry-from-wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 50px auto; }
+  .gest-entry-from-wrapper .title {
+    text-align: center;
+    margin: 20px 0; }
+  .gest-entry-from-wrapper .form-wrapper .form-control label {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    display: block;
+    margin: 5px 0; }
+  .gest-entry-from-wrapper .form-wrapper .form-control input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #ccc; }
+    .gest-entry-from-wrapper .form-wrapper .form-control input.error {
+      border: 1px solid #dc3545; }
+  .gest-entry-from-wrapper .form-wrapper .form-control .titleError {
+    color: #dc3545; }
+  .gest-entry-from-wrapper .form-wrapper .form-control .submit-form {
+    background: #4bb543;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    display: block; }
+

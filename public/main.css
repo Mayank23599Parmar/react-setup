@@ -315,9 +315,10 @@ button,
     padding-right: 15px;
 }
 table { 
-	width: 750px; 
+	max-width: 750px; 
 	border-collapse: collapse; 
 	margin:50px auto;
+    width: 100%;
 	}
 
 /* Zebra striping */

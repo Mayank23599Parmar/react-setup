@@ -1,0 +1,41 @@
+.gest-entry-from-wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    .title {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .form-wrapper {
+        .form-control {
+            label {
+                font-size: 16px;
+                color: #000;
+                font-weight: 700;
+                display: block;
+                margin: 5px 0;
+            }
+            input {
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 10px;
+                outline: none;
+                border: 1px solid #ccc;
+                &.error {
+                    border: 1px solid #dc3545;
+                }
+            }
+            .titleError {
+                color: #dc3545;
+            }
+            .submit-form {
+                background: #4bb543;
+                color: #ffffff;
+                font-size: 16px;
+                margin: 10px 0;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}

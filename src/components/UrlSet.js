@@ -7,9 +7,6 @@ class UrlSet extends Component {
       if(href.includes('http')){
         nonReact = true;
       }
-      if(simply.template == 'customers/login' || simply.template == 'gift_card' ){
-        nonReact = true;
-      }
     }else if(href == null){
         href ="";
     }

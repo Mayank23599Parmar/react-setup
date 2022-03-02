@@ -1,7 +1,7 @@
 .file-selector-wrapper {
     max-width: 1200px;
     margin: 100px auto;
-     padding: 0 15px;
+    padding: 0 15px;
     .excel-selector {
         background: #ffffff;
         color: rgb(0, 0, 0);
@@ -14,5 +14,43 @@
         padding: 1rem 50px;
         width: 30%;
         margin: 0 auto;
+    }
+}
+.excel-format-error {
+    color: #dc3545;
+    text-align: center;
+}
+.download-excel {
+    a {
+        background: #4bb543;
+        color: #ffffff;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+}
+.excel-table-wrapper {
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 0 15px;
+    .error-message-title {
+        color: #dc3545;
+        text-align: center;
+    }
+    .download-excel {
+        a {
+            background: #4bb543;
+            color: #ffffff;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    }
+    table {
+        tr {
+            td {
+                &.errror-message {
+                    color: #dc3545;
+                }
+            }
+        }
     }
 }
